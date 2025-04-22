@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(185, 221, 255);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(159, 171, 182);
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 50px;
+}
+.organiza{
+    
+    display: grid;
+    grid-template-areas: 
+    "num1 num1 num1 num1"
+    "num2 num2 num2 num2"
+    "add  add  sub  sub"
+    "mult  mult  div  div"
+    "button button button button"
+    "result result result result";
+}
+
+#primeiro{
+    grid-area: num1;
+}
+#segundo{
+    grid-area: num2;
+}
+.botao{
+    grid-area: button;
+}
+#add{
+    grid-area: add;
+}
+#sub{
+    grid-area: sub;
+}
+#mult{
+    grid-area: mult;
+}
+#div{
+    grid-area: div;
+}
+#result{
+    grid-area: result;
+}
