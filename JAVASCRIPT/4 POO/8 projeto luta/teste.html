@@ -9,15 +9,29 @@
     
 </head>
 <body>
-    <div id="teste1">
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-        </ul>
+   <div class="fightarea">
+    <div id="hero">
+        <div class="lifebar">
+            <div class="bar" style="width: 10%;"></div>
+        </div>
+        <strong class="name">----</strong>
+        <div>
+        <button class="attackbutton">Atacar</button>
     </div>
-    <input type="text" placeholder="Digite aqui" >
-
+    </div>
+    <div id="monster">
+        <div class="lifebar">
+            <div class="bar" style="width: 10%;"></div>
+        </div>
+        <strong class="name">----</strong>
+        <div>
+        <button class="attackbutton">Atacar</button>
+    </div>
+    </div>
+   </div>
+   <br>
+   <ul id="log"></ul>
+   <script src="classes.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,8 +1,28 @@
-.input{
-    width: 400px;
-    height: 500px;
-    color: aqua;
+.fightarea{
+    display: flex;
+    gap: 20px;
 }
-.input::placeholder{
-    color: red;
+
+#hero{
+    flex: 1;
+} 
+#monster{
+    flex: 1;
+}
+
+.lifebar{
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.lifebar .bar{
+    height: inherit;
+    background-color: red;
+    border-radius: 20px;
+}
+#log{
+    border: 1px solid black;
+    height: 200px;
+    overflow-y: scroll;
 }

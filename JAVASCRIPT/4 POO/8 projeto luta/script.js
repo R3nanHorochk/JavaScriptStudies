@@ -1,19 +1,7 @@
-class person{
-    
-    constructor(name,sobrenome,idade){
-        this.name = name;
-        this.sobrenome = sobrenome;
-        this._idade = idade;
-    }
+let logObj = new log(document.querySelector("#log"));
 
-    
-    
-}
+let char = new warrior("Renan");
+let mosnter = new littleMonster("mosnta");
 
-function createPerson(nome,sobrenome,idade){
-    let pesoa = new person(nome,sobrenome,idade);
-    return pesoa;
-}
-
-let p1 = createPerson("Renan","Horochk",18);
- //factory é um conceito ou uma função que instancia as classes
+const cenario = new stage(char,mosnter,document.querySelector("#hero"),document.querySelector("#monster"),logObj);
+cenario.start();
